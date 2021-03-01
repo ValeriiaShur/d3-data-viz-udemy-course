@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Drawing Shapes with D3" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Drawing Rectangle Bar with D3</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+  <body>
+    <!-- Creating a Bar with html and svg -->
+    <h3>SVG Bar</h3>
+    <svg>
+      <rect width="50" height="200" style="fill: blue" />
+    </svg>
+
+    <!-- Creating the same Bar with D3 -->
+    <h3>D3 Bar</h3>
+    <script>
+      d3.select("body") // selects <body> html tag
+        .append("svg") // add an <svg> html element
+        .append("rect") // add <rect> svg element
+        .attr("width", 50) // set the attribute of width
+        .attr("height", 200) // set the attribute of height
+        .style("fill", "blue"); // add some style
+    </script>
+  </body>
+</html>
